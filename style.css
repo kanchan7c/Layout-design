@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+}
+
+.container {
+  margin: 2rem;
+  height: fit-content;
+  width: 90%;
+  box-shadow: 0 0 16px 0.07px grey;
+}
+
+.title {
+  /* background-color: crimson; */
+  height: 15vh;
+}
+
+.title p {
+  color: gray;
+  max-width: 500px;
+  margin: auto;
+}
+
+.column-one {
+  /* background-color: crimson; */
+  height: 65vh;
+  width: 45vh;
+}
+
+.column-two {
+  /* background-color: darkblue; */
+  height: 80vh;
+  width: 45vh;
+}
+
+.column-three {
+  /* background-color: darkorchid; */
+  height: 65vh;
+  width: 45vh;
+}
+
+.box {
+  height: 32vh;
+  width: 45vh;
+  margin: auto;
+  margin: 1.5rem;
+  padding: 1rem;
+  min-width: 350px;
+  cursor: pointer;
+  transition: all 0.2s ease !important;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.box h1 {
+  font-size: 0.5rem;
+}
+
+.box p {
+  font-size: 0.8rem;
+  color: gray;
+  max-width: 300px;
+}
+
+.box-1 {
+  border-top: 3px solid turquoise;
+}
+
+.box-2 {
+  border-top: 3px solid red;
+}
+
+.box-3 {
+  border-top: 3px solid rgb(255, 217, 0);
+}
+
+.box-4 {
+  border-top: 3px solid rgb(0, 102, 255);
+}
+
+.img-div {
+  height: 100px;
+  width: 100px;
+  margin-top: 5vh;
+  margin-left: 15vw;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+  }
+
+  .column-three,
+  .column-one,
+  .column-three {
+    /* justify-content: flex-start !important;
+    align-items: flex-start !important; */
+    height: fit-content;
+  }
+
+  .column-three {
+    margin-top: -50px !important;
+  }
+
+  .box {
+    animation: animate 2s linear 1;
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(100%) scale(0.7);
+  }
+
+  100% {
+    transform: translateY(0%) scale(1);
+    pointer-events: auto;
+  }
+}
